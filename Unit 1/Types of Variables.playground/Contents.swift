@@ -1,12 +1,34 @@
 import UIKit
 
+//Swift
+/*
+ comment multiple lines:
+ Swift was introduced in 2014
+ is Type safe language, meaning you cant mix a declared data type with another e.g. if var name = "Alex" you cannot update name = 10 // won't compile type String is not an int.
+ modern langage
+ provides optionals that allow us to know wether a variablae has a value or not
+ */
+//mutable
 var str = "Hello, playground"
+
+
+//                     Strings
+//===============================================================
 
 // DAta Types: String, Int(integral, whole number)
 
 // declared a variable fellowName of type String.
 // Type Inference: implicit declaratiom of a variable (" " mean it's a string)
 var fellowName = "DAvid Lin"
+
+fellowName = "Chelsi Christmas"
+
+// concatination - adding together
+fellowName = "34" + "12"
+let fullName = "Alex" + " Paul" //Alex Paul
+
+// using string interpolation we are printing full name's description
+print("Person's full name is \(fullName)")
 
 // Type Annotation (you specify what type of variable). Using Type annotation - explicitly writing the data type using : (colon)
 var cohort: String = "iOS 6.3"
@@ -17,6 +39,14 @@ var alphabet: Character = "c"
 //mutating cohort
 //var is mutable- meaning can be change
 cohort = "7.0"
+let lowercaseName = "alex"
+let uppercaseName = "Alex"
+
+let stringResult = lowercaseName == uppercaseName
+
+let alphabeticalOrder = "Kelyby" < "Lorraine"
+print("alphabetical order results \(alphabeticalOrder)")
+
 //                        Int
 //===============================================================
 // declared variable called age and initialized it to number 32
@@ -86,6 +116,38 @@ var marathonTime = 600
 marathonTime /= 2
 print(marathonTime)
 
+// DIVISION
+
+//integer division truncates decimals (removes them)
+let integerDivision = 16 / 3
+print("Integer division is \(integerDivision)")
+
+// floating point division keeps decimals
+
+let floatingPointDivision = 16.0 / 3.0
+//or
+let floatingPointDivision2: Double  = 16 / 3
+print("Floating point dividion is \(floatingPointDivision)")
+
+//                        DIVISION by 0
+
+// 89 / 0 // does not compile
+
+
+//                   Float vs Double
+//===============================================================
+// Float holds 32-bit vs 64-bit of a Double
+
+let floatNum: Float = 67.99030484
+let doubleNum = 67.99030484 // holds more ?????????? why output is different
+print("Float is \(floatNum) and Double is \(doubleNum)")
+
+// here we are casting(converting) a float to a double
+let accountBalance = Double(doubleNum) + doubleNum
+
+
+
+
 //                   Modulo Operator or Remainder operator
 //===============================================================
 
@@ -99,3 +161,4 @@ print(even)
 //===============================================================
 
 let pi = 3.14
+
