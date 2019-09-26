@@ -94,3 +94,8 @@ print(modResult)
 
 var even = 12 % 6
 print(even)
+
+//                   Constatnts
+//===============================================================
+
+let pi = 3.14
